@@ -20,7 +20,8 @@ def get_data():
 def upload_data(dat, conn_to):
     dat.to_sql("articles", con = conn_to, if_exists = "append", index = False, schema = "news-api")
 
-if __name__ == "__main__":
+
+def main():
     psql = Postgres()
     conn = psql.connect()
     status, data, log = get_data()
@@ -29,5 +30,9 @@ if __name__ == "__main__":
     log = pd.DataFrame([log])
     log.columns = ["code", "status", "total", "datetime"]
     log.drop(["status", "total"], axis=1, inplace=True)
-    log.to_sql("log", con = conn, if_exists = "append", index = False, schema = "news-api")
+    log.to_sql("log", con = conn, if_exists     = "append", index = False, schema = "news-api")
     conn.close()
+
+
+if __name__ == "__main__":
+    main()
