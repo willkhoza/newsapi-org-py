@@ -3,4 +3,8 @@ Pull news data from newsapi.org using their API in Python. The [official website
 
 > Get live top and breaking news headlines from South Africa with our JSON API.
 
-The returned JSON file provides the status, number of articles if the status is success together with another JSON containing the article data.
+The returned JSON file provides the status, number of articles if the status is success together with another JSON containing the article data. 
+
+The PostgreSQL NewsAPI schema is made up of a single ```articles``` 
+
+<img src="postgres_newsapi_DBD.svg">
