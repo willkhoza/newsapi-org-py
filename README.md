@@ -5,6 +5,6 @@ Pull news data from newsapi.org using their API in Python. The [official website
 
 The returned JSON file provides the status, number of articles if the status is success together with another JSON containing the article data. 
 
-The PostgreSQL NewsAPI schema is made up of a single ```articles``` 
+The PostgreSQL NewsAPI schema is made up of a single ```articles``` table as shown below
 
 <img src="postgres_newsapi_DBD.svg">
