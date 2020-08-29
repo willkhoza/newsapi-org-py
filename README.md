@@ -8,3 +8,5 @@ The returned JSON file provides the status, number of articles if the status is 
 The PostgreSQL NewsAPI schema is made up of a single ```articles``` table as shown below
 
 <img src="postgres_newsapi_DBD.svg">
+
+This code has been implemented on Ubuntu and Windows.
